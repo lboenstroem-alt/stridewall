@@ -1,39 +1,63 @@
 ---
 title: "Impressum — Stridewall"
-description: "Impressum der Stridewall-Website: Anbieterkennzeichnung gemäß § 5 DDG."
+description: "Anbieterkennzeichnung der Stridewall-Website gemäß § 5 DDG."
 kicker: "Rechtliches"
 h1: "Impressum"
+notice: "Diese Seite wird vor dem offiziellen Start vervollständigt. Die mit TODO markierten Angaben fehlen noch."
 ---
 
-> **Hinweis:** Diese Seite enthält Platzhalter (TODO) und wird vor dem
-> offiziellen Start vervollständigt.
+<!--
+  ANGABEN, DIE NOCH FEHLEN — bitte an Claude geben oder direkt hier eintragen:
+    1. Vollständiger Firmenname und Rechtsform (z. B. "Stridewall GmbH")
+    2. Anschrift: Straße, Hausnummer, PLZ, Ort (kein Postfach — § 5 DDG)
+    3. Name der vertretungsberechtigten Person(en)
+    4. Telefonnummer
+    5. Registergericht und Registernummer (nur bei eingetragenen Gesellschaften)
+    6. Umsatzsteuer-Identifikationsnummer (falls vorhanden)
 
-## Angaben gemäß § 5 DDG
+  BEWUSST NICHT ENTHALTEN:
+  - Kein Link auf die EU-Plattform zur Online-Streitbeilegung. Die Plattform
+    wurde am 20. Juli 2025 abgeschaltet; die Verlinkungspflicht ist entfallen.
+    Viele Vorlagen führen den Link weiterhin — er geht heute ins Leere.
+  - Keine "Haftungsausschluss"-Textbausteine für Inhalte und Links. Sie
+    entfalten keine Rechtswirkung und stehen einer Kanzlei-Ästhetik entgegen.
+-->
 
-**TODO: Vollständiger Firmenname und Rechtsform**
-(z. B. Stridewall GmbH)
+## Diensteanbieter
 
-**TODO: Straße und Hausnummer** (kein Postfach)
-**TODO: Postleitzahl und Ort**
+<!-- Die zwei Leerzeichen am Zeilenende erzwingen den Zeilenumbruch. -->
+**TODO: Firmenname und Rechtsform**  
+TODO: Straße und Hausnummer  
+TODO: PLZ und Ort  
+Deutschland
 
-**Vertreten durch:**
-TODO: Vor- und Nachname der vertretungsberechtigten Person(en)
+## Vertreten durch
+
+TODO: Vor- und Nachname der vertretungsberechtigten Person
 
 ## Kontakt
 
-E-Mail: kontakt@stridewall.com
-Telefon: **TODO: Telefonnummer**
+E-Mail: [kontakt@stridewall.com](mailto:kontakt@stridewall.com)  
+Telefon: TODO: Telefonnummer
 
 ## Registereintrag
 
-TODO: Registergericht und Registernummer
-(z. B. Amtsgericht München, HRB 000000)
+TODO: Registergericht, z. B. Amtsgericht München  
+TODO: Registernummer, z. B. HRB 000000
 
-## Umsatzsteuer
+## Umsatzsteuer-Identifikationsnummer
 
-Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG:
-**TODO: USt-IdNr. eintragen, falls vorhanden; andernfalls Abschnitt entfernen**
+Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:
+TODO: USt-IdNr. — falls keine vorhanden ist, entfällt dieser Abschnitt.
 
-## Verantwortlich für den Inhalt
+## Redaktionell verantwortlich
 
-TODO: Vor- und Nachname, Anschrift wie oben
+Verantwortlich für journalistisch-redaktionelle Inhalte gemäß § 18 Abs. 2 MStV:
+
+TODO: Vor- und Nachname  
+TODO: Anschrift wie oben
+
+## Verbraucherstreitbeilegung
+
+Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor
+einer Verbraucherschlichtungsstelle teilzunehmen (§ 36 Verbraucherstreit­bei­legungs­gesetz).

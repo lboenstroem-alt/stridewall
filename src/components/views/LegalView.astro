@@ -19,9 +19,16 @@ const { Content } = await render(entry);
 
 <Base locale={locale} pageKey={pageKey} title={d.title} description={d.description}>
   <PageHeader kicker={d.kicker} h1={d.h1} />
-  <div class="bg-paper">
-    <div class="container-site py-16 sm:py-20">
-      <article class="prose text-ink">
+  <div class="bg-cream">
+    <div class="container-site py-20 sm:py-24">
+      {
+        d.notice && (
+          <p class="mx-auto mb-14 max-w-2xl border-l border-gold pl-5 text-[0.9375rem] leading-relaxed text-stone/85">
+            {d.notice}
+          </p>
+        )
+      }
+      <article class="prose mx-auto max-w-2xl">
         <Content />
       </article>
     </div>

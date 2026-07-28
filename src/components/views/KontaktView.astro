@@ -18,31 +18,32 @@ const { Content } = await render(entry);
 <Base locale={locale} pageKey="kontakt" title={d.title} description={d.description}>
   <PageHeader kicker={d.kicker} h1={d.h1} />
 
-  <div class="bg-paper">
-    <div class="container-site grid gap-14 py-16 sm:py-20 lg:grid-cols-[1fr_20rem] lg:gap-20">
-      <div class="prose text-ink">
-        <Content />
-      </div>
-      <aside class="border-t border-gold pt-7 lg:border-t-0 lg:border-l lg:border-ink/15 lg:pt-1 lg:pl-10">
-        <p class="kicker">{d.emailKicker}</p>
+  <div class="bg-cream">
+    <div class="container-site py-20 sm:py-24">
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="caps kicker">{d.emailKicker}</p>
         <a
           href={`mailto:${d.email}`}
-          class="mt-4 block font-serif text-[1.5rem] leading-tight font-semibold break-words text-pine underline decoration-gold decoration-2 underline-offset-4 hover:text-gold-ink"
+          class="mt-6 inline-block font-serif text-[1.75rem] leading-tight font-medium break-words text-ink underline decoration-gold decoration-1 underline-offset-8 transition-colors hover:text-gold-ink sm:text-[2.25rem]"
         >
           {d.email}
         </a>
         {
           d.bookingUrl && (
-            <a
-              href={d.bookingUrl}
-              rel="noopener"
-              class="btn-gold mt-8 w-full text-center"
-            >
-              {d.bookingLabel}
-            </a>
+            <div class="mt-12">
+              <a href={d.bookingUrl} rel="noopener" class="btn">
+                {d.bookingLabel}
+              </a>
+            </div>
           )
         }
-      </aside>
+      </div>
+
+      <span class="rule rule-center mt-20"></span>
+
+      <article class="prose mx-auto mt-20 max-w-2xl">
+        <Content />
+      </article>
     </div>
   </div>
 </Base>

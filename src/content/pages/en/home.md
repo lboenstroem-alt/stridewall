@@ -21,10 +21,9 @@ steps:
   heading: "Four steps, one sequence"
   linkLabel: "The approach in detail"
 proof:
-  kicker: "The benchmark"
-  quote: "One department head had already cut a daily three-to-four-hour analysis down to one or two hours, on his own initiative. Before we had changed anything."
-  figure: "About 13 hours a week"
-  caption: "recovered by a single person. Our job is to turn that exception into the norm."
+  kicker: "Evidence"
+  quote: "One department head had already cut a daily three-to-four-hour analysis down to one or two hours, on his own initiative. About thirteen hours a week, from one person, before we had changed anything."
+  attribution: "From an engagement at a listed German real-estate group"
 whynow:
   kicker: "Why now"
   heading: "The EU AI Act already applies"

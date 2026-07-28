@@ -116,19 +116,20 @@
 }
 
 /* ------------------------------------------------------------------ */
-/* Brand tokens                                                       */
+/* Brand tokens — sampled from the logo file                          */
 /* ------------------------------------------------------------------ */
 
 @theme {
-  --color-pine: #1b2d24; /* logo field green */
-  --color-pine-deep: #12211a;
-  --color-ink: #1f2b24; /* body text on paper */
-  --color-stone: #57635a; /* muted text on paper, AA */
-  --color-paper: #f7f2e7; /* page background */
-  --color-cream: #f3eddf; /* logo cream */
-  --color-sand: #ede5d2; /* darker band on paper */
-  --color-gold: #c2a14c; /* logo gold — rules, large numerals, on-green text */
-  --color-gold-ink: #7c6323; /* darker gold for small text on paper, AA */
+  --color-forest: #122b22; /* logo field green, exact */
+  --color-forest-deep: #0d211a; /* footer, one step down */
+  --color-cream: #f5f0e4; /* page background */
+  --color-sand: #efe6d3; /* the one warmer band, behind the proof quote */
+  --color-gold: #c4a254; /* rules, numerals, text on green */
+  /* Gold reads at 2.3:1 on cream — below AA. Small type on light
+     backgrounds uses this darker gold instead, which reads at 5:1. */
+  --color-gold-ink: #7c6323;
+  --color-ink: #1b1a15; /* headline text on cream */
+  --color-stone: #55534a; /* body text on cream, AA */
 
   --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -140,8 +141,8 @@
 
 @layer base {
   html {
-    background-color: var(--color-paper);
-    color: var(--color-ink);
+    background-color: var(--color-cream);
+    color: var(--color-stone);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
@@ -170,7 +171,7 @@
 @layer components {
   .container-site {
     margin-inline: auto;
-    max-width: 72rem;
+    max-width: 75rem;
     padding-inline: 1.5rem;
   }
   @media (min-width: 640px) {
@@ -184,11 +185,11 @@
      the argument on this site, so every serif figure is lining. */
   .font-serif,
   .prose h2,
+  .prose h3,
   .prose blockquote,
   .wordmark {
     font-variant-numeric: lining-nums;
   }
-  /* Stat rows additionally align on a common width. */
   .figures {
     font-variant-numeric: lining-nums tabular-nums;
   }
@@ -196,44 +197,90 @@
   .wordmark {
     font-family: var(--font-serif);
     font-weight: 500;
-    letter-spacing: 0.34em;
-    text-indent: 0.34em; /* optically re-centre letterspaced caps */
+    letter-spacing: 0.38em;
+    text-indent: 0.38em; /* optically re-centre letterspaced caps */
     text-transform: uppercase;
   }
 
-  .kicker {
-    font-size: 0.8125rem;
-    font-weight: 600;
-    letter-spacing: 0.18em;
+  /* Small letterspaced caps: section kickers, attributions, nav. */
+  .caps {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
     text-transform: uppercase;
+  }
+  .kicker {
     color: var(--color-gold-ink);
   }
+  .on-dark .kicker {
+    color: var(--color-gold);
+  }
 
-  .btn-gold {
-    display: inline-block;
+  /* The gold hairline that separates every block from the next. */
+  .rule {
+    display: block;
+    height: 1px;
+    width: 4.5rem;
     background-color: var(--color-gold);
-    color: var(--color-pine-deep);
-    font-weight: 600;
-    font-size: 0.9375rem;
-    letter-spacing: 0.02em;
-    padding: 0.875rem 2rem;
-    transition: background-color 150ms ease;
+    border: 0;
   }
-  .btn-gold:hover {
-    background-color: #d0b264;
+  .rule-center {
+    margin-inline: auto;
   }
 
-  .btn-outline-dark {
+  .btn {
     display: inline-block;
-    border: 1px solid color-mix(in srgb, var(--color-ink) 35%, transparent);
+    border: 1px solid var(--color-gold);
     color: var(--color-ink);
+    font-size: 0.8125rem;
     font-weight: 500;
-    font-size: 0.9375rem;
-    padding: 0.8125rem 1.75rem;
-    transition: border-color 150ms ease;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    padding: 1.0625rem 2.25rem;
+    transition:
+      background-color 160ms ease,
+      color 160ms ease;
   }
-  .btn-outline-dark:hover {
-    border-color: var(--color-ink);
+  .btn:hover {
+    background-color: var(--color-gold);
+    color: var(--color-forest);
+  }
+  .on-dark .btn {
+    color: var(--color-cream);
+  }
+  .on-dark .btn:hover {
+    color: var(--color-forest);
+  }
+
+  /* Inline call-to-action that is a link, not a button. */
+  .link-caps {
+    display: inline-block;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--color-gold-ink);
+    border-bottom: 1px solid color-mix(in srgb, var(--color-gold) 60%, transparent);
+    padding-bottom: 0.35rem;
+    transition: border-color 160ms ease;
+  }
+  .link-caps:hover {
+    border-color: var(--color-gold);
+  }
+  .on-dark .link-caps {
+    color: var(--color-gold);
+  }
+
+  /* Display headline, centred, the site's dominant voice. */
+  .display {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.005em;
+    color: var(--color-ink);
+  }
+  .on-dark .display {
+    color: var(--color-cream);
   }
 
   .skip-link {
@@ -241,7 +288,7 @@
     left: 1rem;
     top: -4rem;
     z-index: 50;
-    background: var(--color-paper);
+    background: var(--color-cream);
     color: var(--color-ink);
     padding: 0.625rem 1rem;
     font-weight: 600;
@@ -253,38 +300,40 @@
 
   /* Markdown-rendered bodies */
   .prose {
-    max-width: 44rem;
     font-size: 1.0625rem;
     line-height: 1.75;
+    color: var(--color-stone);
   }
   .prose > * + * {
-    margin-top: 1.1em;
+    margin-top: 1.15em;
   }
   .prose h2 {
     font-family: var(--font-serif);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.875rem;
     line-height: 1.2;
-    margin-top: 2.4em;
-    color: var(--color-pine);
+    margin-top: 2.6em;
+    color: var(--color-ink);
   }
   .prose h2:first-child {
     margin-top: 0;
   }
   .prose h3 {
-    font-weight: 600;
-    font-size: 1.0625rem;
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-size: 1.375rem;
     margin-top: 2em;
-    color: var(--color-pine);
+    color: var(--color-ink);
   }
   .prose a {
+    color: var(--color-gold-ink);
     text-decoration: underline;
-    text-decoration-color: var(--color-gold);
-    text-decoration-thickness: 1.5px;
-    text-underline-offset: 3px;
+    text-decoration-color: color-mix(in srgb, var(--color-gold) 70%, transparent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
   }
   .prose a:hover {
-    color: var(--color-gold-ink);
+    text-decoration-color: var(--color-gold);
   }
   .prose ul {
     list-style: none;
@@ -301,9 +350,9 @@
     content: "";
     position: absolute;
     left: 0;
-    top: 0.72em;
+    top: 0.75em;
     width: 0.75rem;
-    height: 1.5px;
+    height: 1px;
     background: var(--color-gold);
   }
   .prose ol {
@@ -315,19 +364,23 @@
   }
   .prose strong {
     font-weight: 600;
-    color: var(--color-pine);
+    color: var(--color-ink);
   }
   .prose blockquote {
-    border-left: 2px solid var(--color-gold);
-    padding-left: 1.25rem;
+    border-left: 1px solid var(--color-gold);
+    padding-left: 1.5rem;
     font-family: var(--font-serif);
-    font-style: italic;
-    font-size: 1.25rem;
+    font-size: 1.3125rem;
+    line-height: 1.5;
+    color: var(--color-ink);
   }
   .prose hr {
     border: 0;
     height: 1px;
-    background: color-mix(in srgb, var(--color-ink) 15%, transparent);
-    margin-block: 2.5rem;
+    background: color-mix(in srgb, var(--color-ink) 12%, transparent);
+    margin-block: 2.75rem;
+  }
+  .prose code {
+    font-size: 0.9em;
   }
 }

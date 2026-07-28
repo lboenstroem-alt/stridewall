@@ -15,10 +15,10 @@ import wawoff2 from 'wawoff2';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const pub = join(root, 'public');
 
-const PINE = '#1b2d24';
-const PINE_DEEP = '#12211a';
-const CREAM = '#f3eddf';
-const GOLD = '#c2a14c';
+const PINE = '#122b22';
+const PINE_DEEP = '#0d211a';
+const CREAM = '#f5f0e4';
+const GOLD = '#c4a254';
 
 /**
  * resvg matches on the family name stored inside the font, which is not the

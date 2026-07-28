@@ -22,15 +22,15 @@ const { Content } = await render(entry);
 <Base locale={locale} pageKey={pageKey} title={d.title} description={d.description}>
   <PageHeader kicker={d.kicker} h1={d.h1} intro={d.intro} />
 
-  <div class="bg-paper">
-    <div class="container-site py-16 sm:py-20">
-      <article class="prose text-ink">
+  <div class="bg-cream">
+    <div class="container-site py-20 sm:py-24">
+      <article class="prose mx-auto max-w-2xl">
         <Content />
       </article>
       {
         d.disclaimer && (
           <aside
-            class="mt-16 max-w-2xl border-l-2 border-gold-ink/50 bg-sand px-6 py-5 text-[0.9375rem] leading-relaxed text-stone"
+            class="mx-auto mt-20 max-w-2xl border-t border-gold/60 pt-7 text-[0.9375rem] leading-relaxed text-stone/85"
             aria-label={locale === 'de' ? 'Rechtlicher Hinweis' : 'Legal notice'}
           >
             {d.disclaimer}
@@ -42,12 +42,7 @@ const { Content } = await render(entry);
 
   {
     d.cta && (
-      <CtaSection
-        locale={locale}
-        heading={d.cta.heading}
-        body={d.cta.body}
-        button={d.cta.button}
-      />
+      <CtaSection locale={locale} heading={d.cta.heading} body={d.cta.body} button={d.cta.button} />
     )
   }
 </Base>

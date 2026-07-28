@@ -21,10 +21,9 @@ steps:
   heading: "Vier Schritte, eine Reihenfolge"
   linkLabel: "Das Vorgehen im Detail"
 proof:
-  kicker: "Der Maßstab"
-  quote: "Ein Abteilungsleiter hatte eine tägliche Analyse von drei bis vier Stunden aus eigener Initiative auf ein bis zwei Stunden verkürzt. Bevor wir irgendetwas verändert hatten."
-  figure: "Rund 13 Stunden pro Woche"
-  caption: "zurückgewonnen von einer einzigen Person. Unsere Aufgabe ist, aus diesem Einzelfall den Normalfall zu machen."
+  kicker: "Belegt"
+  quote: "Ein Abteilungsleiter hatte eine tägliche Analyse von drei bis vier Stunden aus eigener Initiative auf ein bis zwei Stunden verkürzt. Rund dreizehn Stunden pro Woche, bei einer Person, bevor wir irgendetwas verändert hatten."
+  attribution: "Aus einem Mandat bei einer börsennotierten deutschen Immobiliengruppe"
 whynow:
   kicker: "Warum jetzt"
   heading: "Die KI-Verordnung gilt bereits"
