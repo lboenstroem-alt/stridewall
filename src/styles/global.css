@@ -1,0 +1,315 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------ */
+/* Self-hosted fonts — latin + latin-ext (umlauts), woff2 only.       */
+/* Files live in /public/fonts, packaged via @fontsource (npm),       */
+/* never loaded from any CDN.                                         */
+/* ------------------------------------------------------------------ */
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/cormorant-garamond-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/cormorant-garamond-latin-ext-500-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+1E00-1EFF, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/cormorant-garamond-latin-500-italic.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/cormorant-garamond-latin-ext-500-italic.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+1E00-1EFF, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/cormorant-garamond-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/cormorant-garamond-latin-ext-600-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+1E00-1EFF, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/ibm-plex-sans-latin-400-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/ibm-plex-sans-latin-ext-400-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+1E00-1EFF, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/ibm-plex-sans-latin-500-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/ibm-plex-sans-latin-ext-500-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+1E00-1EFF, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/ibm-plex-sans-latin-600-normal.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/ibm-plex-sans-latin-ext-600-normal.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+1E00-1EFF, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* ------------------------------------------------------------------ */
+/* Brand tokens                                                       */
+/* ------------------------------------------------------------------ */
+
+@theme {
+  --color-pine: #1b2d24; /* logo field green */
+  --color-pine-deep: #12211a;
+  --color-ink: #1f2b24; /* body text on paper */
+  --color-stone: #57635a; /* muted text on paper, AA */
+  --color-paper: #f7f2e7; /* page background */
+  --color-cream: #f3eddf; /* logo cream */
+  --color-sand: #ede5d2; /* darker band on paper */
+  --color-gold: #c2a14c; /* logo gold — rules, large numerals, on-green text */
+  --color-gold-ink: #7c6323; /* darker gold for small text on paper, AA */
+
+  --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* ------------------------------------------------------------------ */
+/* Base                                                               */
+/* ------------------------------------------------------------------ */
+
+@layer base {
+  html {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+  }
+  ::selection {
+    background-color: color-mix(in srgb, var(--color-gold) 35%, transparent);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-gold-ink);
+    outline-offset: 3px;
+  }
+  .on-dark :focus-visible,
+  .on-dark:focus-visible {
+    outline-color: var(--color-gold);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Components                                                         */
+/* ------------------------------------------------------------------ */
+
+@layer components {
+  .container-site {
+    margin-inline: auto;
+    max-width: 72rem;
+    padding-inline: 1.5rem;
+  }
+  @media (min-width: 640px) {
+    .container-site {
+      padding-inline: 2.5rem;
+    }
+  }
+
+  .wordmark {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    letter-spacing: 0.34em;
+    text-indent: 0.34em; /* optically re-centre letterspaced caps */
+    text-transform: uppercase;
+  }
+
+  .kicker {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-gold-ink);
+  }
+
+  .btn-gold {
+    display: inline-block;
+    background-color: var(--color-gold);
+    color: var(--color-pine-deep);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    letter-spacing: 0.02em;
+    padding: 0.875rem 2rem;
+    transition: background-color 150ms ease;
+  }
+  .btn-gold:hover {
+    background-color: #d0b264;
+  }
+
+  .btn-outline-dark {
+    display: inline-block;
+    border: 1px solid color-mix(in srgb, var(--color-ink) 35%, transparent);
+    color: var(--color-ink);
+    font-weight: 500;
+    font-size: 0.9375rem;
+    padding: 0.8125rem 1.75rem;
+    transition: border-color 150ms ease;
+  }
+  .btn-outline-dark:hover {
+    border-color: var(--color-ink);
+  }
+
+  .skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -4rem;
+    z-index: 50;
+    background: var(--color-paper);
+    color: var(--color-ink);
+    padding: 0.625rem 1rem;
+    font-weight: 600;
+    transition: top 120ms ease;
+  }
+  .skip-link:focus-visible {
+    top: 1rem;
+  }
+
+  /* Markdown-rendered bodies */
+  .prose {
+    max-width: 44rem;
+    font-size: 1.0625rem;
+    line-height: 1.75;
+  }
+  .prose > * + * {
+    margin-top: 1.1em;
+  }
+  .prose h2 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 1.2;
+    margin-top: 2.4em;
+    color: var(--color-pine);
+  }
+  .prose h2:first-child {
+    margin-top: 0;
+  }
+  .prose h3 {
+    font-weight: 600;
+    font-size: 1.0625rem;
+    margin-top: 2em;
+    color: var(--color-pine);
+  }
+  .prose a {
+    text-decoration: underline;
+    text-decoration-color: var(--color-gold);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+  }
+  .prose a:hover {
+    color: var(--color-gold-ink);
+  }
+  .prose ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .prose ul > li {
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  .prose ul > li + li {
+    margin-top: 0.6em;
+  }
+  .prose ul > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.72em;
+    width: 0.75rem;
+    height: 1.5px;
+    background: var(--color-gold);
+  }
+  .prose ol {
+    list-style: decimal;
+    padding-left: 1.4rem;
+  }
+  .prose ol > li + li {
+    margin-top: 0.6em;
+  }
+  .prose strong {
+    font-weight: 600;
+    color: var(--color-pine);
+  }
+  .prose blockquote {
+    border-left: 2px solid var(--color-gold);
+    padding-left: 1.25rem;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.25rem;
+  }
+  .prose hr {
+    border: 0;
+    height: 1px;
+    background: color-mix(in srgb, var(--color-ink) 15%, transparent);
+    margin-block: 2.5rem;
+  }
+}

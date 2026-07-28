@@ -1,0 +1,43 @@
+---
+import { routes, type Locale } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+  heading: string;
+  body: string;
+  button: string;
+  tone?: 'dark' | 'light';
+}
+
+const { locale, heading, body, button, tone = 'dark' } = Astro.props;
+const dark = tone === 'dark';
+---
+
+<section
+  class:list={[
+    dark ? 'on-dark bg-pine text-cream' : 'border-t border-ink/10 bg-sand text-ink',
+  ]}
+>
+  <div class="container-site py-20 sm:py-24">
+    <div class="max-w-2xl">
+      <span class:list={['block h-px w-16', dark ? 'bg-gold' : 'bg-gold-ink/60']}></span>
+      <h2
+        class:list={[
+          'mt-8 font-serif text-3xl leading-[1.15] font-semibold sm:text-[2.5rem]',
+          dark ? 'text-cream' : 'text-pine',
+        ]}
+      >
+        {heading}
+      </h2>
+      <p
+        class:list={[
+          'mt-5 text-[1.0625rem] leading-relaxed',
+          dark ? 'text-cream/75' : 'text-stone',
+        ]}
+      >
+        {body}
+      </p>
+      <a href={routes.kontakt[locale]} class="btn-gold mt-9">{button}</a>
+    </div>
+  </div>
+</section>

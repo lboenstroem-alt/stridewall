@@ -1,0 +1,60 @@
+---
+import { routes, ui, altLocale, type Locale, type PageKey } from '../lib/i18n';
+
+interface Props {
+  locale: Locale;
+  pageKey: PageKey;
+}
+
+const { locale, pageKey } = Astro.props;
+const t = ui[locale];
+const other = altLocale(locale);
+const otherPath = routes[pageKey][other];
+const switchHref = otherPath !== routes[pageKey][locale] ? otherPath : routes.home[other];
+---
+
+<header class="on-dark bg-pine text-cream">
+  <div
+    class="container-site flex flex-wrap items-baseline justify-between gap-x-8 gap-y-4 py-6 sm:py-7"
+  >
+    <a href={routes.home[locale]} class="group inline-block no-underline" aria-label="Stridewall">
+      <span class="wordmark block text-[1.05rem] text-cream sm:text-[1.15rem]">Stridewall</span>
+      <span class="mt-1.5 block h-px w-16 bg-gold transition-[width] duration-200 group-hover:w-24"
+      ></span>
+    </a>
+    <nav aria-label={t.footerNav}>
+      <ul class="flex flex-wrap items-baseline gap-x-7 gap-y-2 text-[0.9375rem]">
+        {
+          t.nav.map(({ key, label }) => (
+            <li>
+              <a
+                href={routes[key][locale]}
+                aria-current={key === pageKey ? 'page' : undefined}
+                class:list={[
+                  'pb-1 font-medium text-cream/85 transition-colors hover:text-cream',
+                  key === pageKey &&
+                    'border-b border-gold text-cream',
+                ]}
+              >
+                {label}
+              </a>
+            </li>
+          ))
+        }
+        <li aria-hidden="true" class="hidden text-cream/30 sm:block">·</li>
+        <li>
+          <a
+            href={switchHref}
+            rel="alternate"
+            hreflang={other}
+            lang={other}
+            class="font-medium tracking-[0.08em] text-cream/60 transition-colors hover:text-cream"
+            aria-label={t.langSwitch}
+          >
+            {t.langSwitchShort}
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
