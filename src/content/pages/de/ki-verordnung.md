@@ -37,4 +37,4 @@ Nach der ständigen Rechtsprechung des Bundesarbeitsgerichts kommt es dabei nich
 
 ## Der gemeinsame Nenner
 
-Alle vier Punkte setzen dasselbe voraus: Ein Unternehmen muss wissen, welche KI im Haus genutzt wird, wofür und nach welchen Regeln. Genau dort beginnt [unser Vorgehen](/vorgehen).
+Alle vier Punkte setzen dasselbe voraus: Ein Unternehmen muss wissen, welche KI im Haus genutzt wird, wofür und nach welchen Regeln. Genau dort beginnt [unser Vorgehen](/vorgehen/).

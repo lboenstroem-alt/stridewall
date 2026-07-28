@@ -11,7 +11,7 @@ cta:
 
 Stridewall is a consultancy for AI adoption in the German Mittelstand. We are small, and we are new. That is written here because you would notice anyway, and because it matches how we work: we say what is.
 
-We cannot show you a wall of twenty client logos. We can show you a method that proved itself in our first engagement, at a listed German real-estate group. There we found what many studies now confirm: nine out of ten employees were already using AI, six out of nine did not know the data rules, and average self-rated skill was 2.3 out of 5. [Our approach](/en/approach) grew out of that finding, and it is the approach we work with today.
+We cannot show you a wall of twenty client logos. We can show you a method that proved itself in our first engagement, at a listed German real-estate group. There we found what many studies now confirm: nine out of ten employees were already using AI, six out of nine did not know the data rules, and average self-rated skill was 2.3 out of 5. [Our approach](/en/approach/) grew out of that finding, and it is the approach we work with today.
 
 <!-- TODO: Add founder profiles (name, background, photo optional) once approved. -->
 

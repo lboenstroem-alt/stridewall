@@ -37,4 +37,4 @@ Under the settled case law of the Federal Labour Court, the employer's intent is
 
 ## The common denominator
 
-All four points rest on the same foundation: a company has to know which AI is used in the organisation, for what, and under which rules. That is exactly where [our approach](/en/approach) begins.
+All four points rest on the same foundation: a company has to know which AI is used in the organisation, for what, and under which rules. That is exactly where [our approach](/en/approach/) begins.

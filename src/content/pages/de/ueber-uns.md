@@ -11,7 +11,7 @@ cta:
 
 Stridewall ist eine Beratung für den Einsatz von KI im deutschen Mittelstand. Wir sind klein, und wir sind neu. Das steht hier, weil Sie es ohnehin merken würden, und weil es zu unserer Arbeitsweise passt: Wir sagen, was ist.
 
-Eine Wand mit zwanzig Kundenlogos können wir nicht zeigen. Eine Methode, die sich im ersten Mandat bei einer börsennotierten deutschen Immobiliengruppe bewährt hat, schon. Dort fanden wir vor, was inzwischen viele Untersuchungen bestätigen: Neun von zehn Beschäftigten nutzten bereits KI, sechs von neun kannten die Datenregeln nicht, die durchschnittliche Selbsteinschätzung lag bei 2,3 von 5. Aus diesem Befund ist [das Vorgehen](/vorgehen) entstanden, mit dem wir heute arbeiten.
+Eine Wand mit zwanzig Kundenlogos können wir nicht zeigen. Eine Methode, die sich im ersten Mandat bei einer börsennotierten deutschen Immobiliengruppe bewährt hat, schon. Dort fanden wir vor, was inzwischen viele Untersuchungen bestätigen: Neun von zehn Beschäftigten nutzten bereits KI, sechs von neun kannten die Datenregeln nicht, die durchschnittliche Selbsteinschätzung lag bei 2,3 von 5. Aus diesem Befund ist [das Vorgehen](/vorgehen/) entstanden, mit dem wir heute arbeiten.
 
 <!-- TODO: Gründerporträts ergänzen (Name, Hintergrund, Foto optional), sobald freigegeben. -->
 
