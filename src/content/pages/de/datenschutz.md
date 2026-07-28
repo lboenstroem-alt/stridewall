@@ -27,7 +27,7 @@ im Sinne von Art. 4 Nr. 7 DSGVO:
 
 **TODO: Firmenname und Rechtsform**  
 TODO: Straße, PLZ, Ort  
-E-Mail: [kontakt@stridewall.com](mailto:kontakt@stridewall.com)
+E-Mail: [contact@stridewall.com](mailto:contact@stridewall.com)
 
 ## Der Grundsatz zuerst
 
@@ -112,7 +112,7 @@ DSGVO verarbeiten, können Sie der Verarbeitung aus Gründen, die sich aus Ihrer
 besonderen Situation ergeben, jederzeit widersprechen (Art. 21 DSGVO).
 
 Für die Ausübung dieser Rechte genügt eine formlose Nachricht an
-[kontakt@stridewall.com](mailto:kontakt@stridewall.com).
+[contact@stridewall.com](mailto:contact@stridewall.com).
 
 ## Beschwerderecht
 

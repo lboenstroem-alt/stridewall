@@ -37,7 +37,7 @@ TODO: Vor- und Nachname der vertretungsberechtigten Person
 
 ## Kontakt
 
-E-Mail: [kontakt@stridewall.com](mailto:kontakt@stridewall.com)  
+E-Mail: [contact@stridewall.com](mailto:contact@stridewall.com)  
 Telefon: TODO: Telefonnummer
 
 ## Registereintrag

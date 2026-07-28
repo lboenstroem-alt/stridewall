@@ -3,7 +3,7 @@ title: "Kontakt — Stridewall"
 description: "Ein Erstgespräch von dreißig Minuten, per Telefon oder Video. Eine E-Mail genügt. Kein Kontaktformular, kein Newsletter."
 kicker: "Kontakt"
 h1: "Ein Gespräch, kein Formular"
-email: "kontakt@stridewall.com"
+email: "contact@stridewall.com"
 # TODO: Buchungslink eintragen, sobald ein Terminierungs-Werkzeug feststeht
 # (EU-gehostet bevorzugen). Solange das Feld leer ist, zeigt die Seite nur die
 # E-Mail-Adresse.

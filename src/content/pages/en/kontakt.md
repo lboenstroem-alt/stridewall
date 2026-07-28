@@ -3,7 +3,7 @@ title: "Contact — Stridewall"
 description: "A thirty-minute intro call, by phone or video. An email is enough. No contact form, no newsletter."
 kicker: "Contact"
 h1: "A conversation, not a form"
-email: "kontakt@stridewall.com"
+email: "contact@stridewall.com"
 # TODO: Add the booking link once a scheduling tool is chosen (prefer EU-hosted).
 # While this field is empty, the page shows the email address only.
 bookingUrl: ""
