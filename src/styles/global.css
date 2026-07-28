@@ -144,7 +144,11 @@
     color: var(--color-ink);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
-    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
   }
   ::selection {
     background-color: color-mix(in srgb, var(--color-gold) 35%, transparent);
@@ -173,6 +177,20 @@
     .container-site {
       padding-inline: 2.5rem;
     }
+  }
+
+  /* Cormorant defaults to old-style figures, which turn "9 von 10" and
+     "2. Februar 2025" into something a reader has to decode. The numbers are
+     the argument on this site, so every serif figure is lining. */
+  .font-serif,
+  .prose h2,
+  .prose blockquote,
+  .wordmark {
+    font-variant-numeric: lining-nums;
+  }
+  /* Stat rows additionally align on a common width. */
+  .figures {
+    font-variant-numeric: lining-nums tabular-nums;
   }
 
   .wordmark {

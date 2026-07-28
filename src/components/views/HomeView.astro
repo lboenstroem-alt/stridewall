@@ -48,7 +48,7 @@ const steps = (await getCollection('steps', ({ id }) => id.startsWith(`${locale}
         {
           d.stats.items.map((s: { value: string; text: string }) => (
             <div class="border-t border-gold pt-6">
-              <dt class="font-serif text-[2.75rem] leading-none font-semibold text-pine sm:text-5xl">
+              <dt class="figures font-serif text-[2.75rem] leading-none font-semibold text-pine sm:text-5xl">
                 {s.value}
               </dt>
               <dd class="mt-4 text-[0.9375rem] leading-relaxed text-stone">{s.text}</dd>
@@ -73,7 +73,7 @@ const steps = (await getCollection('steps', ({ id }) => id.startsWith(`${locale}
         {
           steps.map((s) => (
             <li class="border-t border-ink/15 pt-6">
-              <span class="font-serif text-2xl leading-none font-semibold text-gold-ink">
+              <span class="figures font-serif text-2xl leading-none font-semibold text-gold-ink">
                 {String(s.data.order).padStart(2, '0')}
               </span>
               <h3 class="mt-4 text-[1.0625rem] font-semibold text-pine">{s.data.title}</h3>
@@ -101,7 +101,7 @@ const steps = (await getCollection('steps', ({ id }) => id.startsWith(`${locale}
           </blockquote>
         </div>
         <div class="border-t border-cream/20 pt-6 lg:border-t-0 lg:border-l lg:border-cream/20 lg:pt-0 lg:pl-10">
-          <p class="font-serif text-[2.25rem] leading-[1.1] font-semibold text-gold sm:text-[2.5rem]">
+          <p class="figures font-serif text-[2.25rem] leading-[1.1] font-semibold text-gold sm:text-[2.5rem]">
             {d.proof.figure}
           </p>
           <p class="mt-4 text-[0.9375rem] leading-relaxed text-cream/75">{d.proof.caption}</p>
