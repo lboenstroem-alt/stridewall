@@ -1,6 +1,8 @@
 node_modules/
 dist/
 .astro/
-.vercel/
 .DS_Store
-.vercel
+
+# The build brief carries positioning notes and the anonymised client
+# reference; it stays on disk but out of this public repository.
+BRIEF.md

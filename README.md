@@ -1,7 +1,6 @@
 # Stridewall — Website
 
 Marketing site for Stridewall, an AI consultancy for German SMEs.
-Built to the spec in [BRIEF.md](./BRIEF.md).
 
 ## Stack
 
@@ -31,6 +30,13 @@ npm run preview
 
 ## Deployment
 
-Hosted on Vercel; every push to `main` redeploys. Domain `stridewall.com` is
-registered at Squarespace (registrar only) — DNS points A `@` → Vercel and
-CNAME `www` → Vercel; `www` 301s to the apex (see `vercel.json`).
+Hosted on GitHub Pages. Every push to `main` runs
+[.github/workflows/deploy.yml](.github/workflows/deploy.yml), which builds the
+site and publishes `dist/`.
+
+The domain `stridewall.com` is registered at Squarespace, which acts as
+registrar and DNS host only. Its DNS points `@` at the four GitHub Pages A
+records and `www` at `lboenstroem-alt.github.io`; GitHub redirects `www` to the
+apex and issues the TLS certificate. `public/CNAME` is what tells GitHub Pages
+which domain to serve — deleting it would drop the custom domain on the next
+deploy.
