@@ -7,7 +7,8 @@ export type PageKey =
   | 'ueberUns'
   | 'kontakt'
   | 'impressum'
-  | 'datenschutz';
+  | 'datenschutz'
+  | 'notFound';
 
 /**
  * Route map, one entry per page. The legal pages exist in German only
@@ -21,6 +22,8 @@ export const routes: Record<PageKey, Record<Locale, string>> = {
   kontakt: { de: '/kontakt', en: '/en/contact' },
   impressum: { de: '/impressum', en: '/impressum' },
   datenschutz: { de: '/datenschutz', en: '/datenschutz' },
+  // One 404 document serves every unmatched path, so it has no translation.
+  notFound: { de: '/404', en: '/404' },
 };
 
 export const altLocale = (l: Locale): Locale => (l === 'de' ? 'en' : 'de');
